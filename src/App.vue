@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <el-input v-model="input" placeholder="请输入内容"></el-input>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,7 +8,15 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  data () {
+    return {
+      input: ''
+    }
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
