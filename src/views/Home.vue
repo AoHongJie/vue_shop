@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="container">
     <el-header>
       <div class="logo">
         <img src="../assets/heima.png" alt="" />
@@ -112,8 +112,10 @@ export default {
 h1 {
   font-weight: normal;
 }
-.el-container {
+.container {
   height: 100%;
+}
+.el-container {
   .el-header {
     // 头部
     display: flex;
