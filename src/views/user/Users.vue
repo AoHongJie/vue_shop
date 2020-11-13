@@ -32,7 +32,7 @@
         </el-col>
       </el-row>
     </el-card>
-    <!-- 用户列表区域 -->
+    <!-- 用户列表区域 start -->
     <el-table :data="userList" style="width: 100%" border stripe>
       <el-table-column type="index" label="#"> </el-table-column>
       <el-table-column prop="username" label="姓名"> </el-table-column>
@@ -75,6 +75,8 @@
         </template>
       </el-table-column>
     </el-table>
+    <!-- 用户列表区域 end -->
+
     <!-- 分页器 start -->
     <div class="block">
       <el-pagination
